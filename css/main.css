@@ -12,19 +12,7 @@
   }
 
   /*
-  font-family: "poppins",
-
-  */
-  
-
-/* 변수 설정 */
-:root{
-  --txt-color : #5E6282;
-  --white : #fff;
-  --container: 1170px;
-  --fz:16px;
-  --lh:26px;
-  
+  font-family: "poppins"
   Google Sans	Medium	
   Montserrat	Regular	
   Open Sans	Semibold	
@@ -36,7 +24,18 @@
   Poppins	SemiBold
   Poppins	Regular	
   Roboto	Regular
-  Volkhov	Bold
+  Volkhov	Bold 
+  */
+  
+
+/* 변수 설정 */
+:root{
+  --txt-color : #5E6282;
+  --white : #fff;
+  --container: 1170px;
+  --fz:16px;
+  --lh:26px;
+  
 
 
 }
