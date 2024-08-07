@@ -51,6 +51,7 @@ body{
   line-height: nar(--lh);
   font-family: "Poppins", sans-serif; */
   font: var(--fz)/ var(--lh) "Poppins", sans-serif;
+  color: var(--txt-color);
 }
 
 /* 링크 버튼 정리 */
@@ -146,4 +147,40 @@ header{
 
 .top_nav .dropdown ul li:hover{
   color: #5E6282;
+}
+
+/*MAIN_content*/
+.content{
+  display: flex;
+  justify-content: space-between;
+
+}
+header .content .desc{
+  width: 545px;
+}
+.desc h3{
+  font-size: 20px ;
+  font-weight: bold;
+  line-height:30px;
+  color: #DF6951; 
+  text-transform: uppercase;
+  margin-bottom: 24px;
+
+}
+.desc h2{
+  color: #181E4B;
+  font: 84px/89px Volkhov, sans-serif;
+  font-weight: bold;
+  letter-spacing: -3.36px;/*84px * 0.04 = 3.36*/
+  margin-bottom: 30px;
+}
+.desc p{
+  width:477px;
+  font-size: 16px;
+  line-height:30px;
+  font-weight: 500px;
+  margin-bottom: 34px;
+}
+header .content .img{
+
 }
