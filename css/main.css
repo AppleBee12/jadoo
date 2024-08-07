@@ -64,11 +64,12 @@ header{
 }
 .top_nav{
   padding: 47px 0;
+  align-items: center;
 }
 .top_nav > div{
   display: flex;
   justify-content:space-between;
-  align-items: center;
+  
 }
 .top_nav.fixed{
   position: fixed;
@@ -80,6 +81,7 @@ header{
   box-shadow: 0 3px 3px rgba(0,0,0,.06);
 }
 .top_nav nav{
+  align-items: center;
   display: flex;
 }
 .top_nav ul{
@@ -120,4 +122,28 @@ header{
 
 .login_links a:hover{
   border-color: #212832;
+}
+
+.top_nav .dropdown{
+  position:relative;
+}
+.top_nav .dropdown ul{
+  position:absolute;
+  right:0;
+  top: 100%;
+  padding:5px;
+  border: 1px solid #212832;
+  flex-direction: column;
+  border-radius:5px;
+  background: var(--white);
+  display: none;
+}
+.top_nav .dropdown ul li{
+  line-height: 30px;
+  padding:0 15px;
+
+}
+
+.top_nav .dropdown ul li:hover{
+  color: #5E6282;
 }
