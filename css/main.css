@@ -54,3 +54,70 @@ body{
 }
 
 /* 링크 버튼 정리 */
+
+
+/*HEADER*/
+header{
+  background:
+  url(../images/header_bg.svg) no-repeat right top,
+  url(../images/header_elipse.svg) no-repeat left top;
+}
+.top_nav{
+  padding: 47px 0;
+}
+.top_nav > div{
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+}
+.top_nav.fixed{
+  position: fixed;
+  padding:20px 0;
+  top:0;
+  left:0;
+  right:0;
+  background: rbga(255,255,255,.8);
+  box-shadow: 0 3px 3px rgba(0,0,0,.06);
+}
+.top_nav nav{
+  display: flex;
+}
+.top_nav ul{
+  display: flex;
+  align-items: center;
+}
+.main_menu{
+  gap:60px;
+  margin-right: 86px;
+}
+.login_links{
+  gap: 50px;
+  margin-right: 42px;
+}
+.logo a{
+  background: url(../images/Logo.svg) no-repeat ;
+  display: block;
+  width: 116px;
+  height: 35px;
+  line-height: 35px;
+  text-indent: -9999px ;
+}
+.top_nav a{
+  font-family: 'Product Sans Medium Regular';
+  font-size: 17px;
+  color: #212832;
+}
+
+.login_links a{
+ height: 40px;
+ padding: 0 20px;
+ border: 1px solid transparent;
+ display: block;
+ line-height: 40px;
+ border-radius: 5px;
+ transition: 0.3s;
+}
+
+.login_links a:hover{
+  border-color: #212832;
+}
