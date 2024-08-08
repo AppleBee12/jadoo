@@ -1,32 +1,20 @@
-/*reset 하는 방법, 크로스 브라우징에 초점이 있는 normalize  css reset*/
 @charset 'utf-8';
 @import url('reset.css');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto&family=Volkhov:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:wght@400;500;600;700&family=Volkhov:wght@700&display=swap');
+
 @font-face {
   font-family: 'Product Sans Medium Regular';
   font-style: normal;
   font-weight: normal;
   src: local('Product Sans Medium Regular'), url('../fonts/ProductSans-Medium.woff') format('woff');
-  }
-
-  /*
-  font-family: "poppins"
-  Google Sans	Medium	
-  Montserrat	Regular	
-  Open Sans	Semibold	
-  Open Sans	Regular
-  Plus Jakarta Sans	ExtraBold	
-  Plus Jakarta Sans	Medium	
-  Poppins	Medium	
-  Poppins	Bold	
-  Poppins	SemiBold
-  Poppins	Regular	
-  Roboto	Regular
-  Volkhov	Bold 
-  */
-  
+}
+/*
+font-family: "Poppins", sans-serif;
+font-family: "Volkhov", serif;
+font-family: "Plus Jakarta Sans", sans-serif;
+font-family: "Open Sans", sans-serif;
+font-family: "Montserrat", sans-serif;
+*/
 
 /* 변수 설정 */
 :root{
@@ -35,8 +23,7 @@
   --container: 1170px;
   --fz:16px;
   --lh:26px;
-  
-
+ 
 
 }
 /* 레이아웃 정리 */
@@ -45,14 +32,39 @@
   margin: 0 auto;
 }
 
+main>section{
+  padding: 90px 0;
+}
+.txt_center{
+  text-align: center;
+}
+
 /* 폰트 위계 정리 */
 body{
-  /* font-size: var(--fz);
-  line-height: nar(--lh);
-  font-family: "Poppins", sans-serif; */
-  font: var(--fz)/ var(--lh) "Poppins", sans-serif;
-  color: var(--txt-color);
+  /*
+  font-size:var(--fz);
+  line-height: var(--lh);
+  font-family: "Poppins", sans-serif;
+  */
+  font:var(--fz)/var(--lh) "Poppins", sans-serif;
+  color:var(--txt-color);
 }
+section .sec_sub_tt{
+  font-size: 18px;
+  line-height: 27px;
+  color: #5E6282;
+  margin-bottom: 10px;
+  font-weight: bold;
+
+}
+section .sec_tt{
+font-family: "Volkhov", serif;
+ font-size: 50px;
+ line-height: 65px;
+ color: #14183E;
+ margin-bottom: 60px;
+}
+
 
 /* 링크 버튼 정리 */
 
@@ -68,6 +80,7 @@ header{
   padding: 47px 0;
   align-items: center;
 }
+
 .top_nav > div{
   display: flex;
   justify-content:space-between;
@@ -236,4 +249,80 @@ header .content .desc{
   background: #DF6951;  
   box-shadow: 0 15px 30px rgba(223,105,81,.3);
 }
+
+/*SERVICES*/
+.services > div{
+  position: relative;
+}
+.services>.container:after{
+  content: '';
+  width: 153px;
+  height:166px;
+  position:absolute;
+  background: url(../images/services_right_top.svg) no-repeat;
+  top: 0px;
+  right:-75px;
+}
+
+.services_list{
+  display: flex;
+  justify-content: space-between;
+}
+
+.services_list li{
+  width: 267px;
+  padding: 0 42px 44px 42px;
+  box-sizing: border-box;
+  text-align: center;
+  background: var(--white);
+  border-radius: 30px;
+  position:relative;
+  transition: 0.3s;
+  
+}
+
+.services_list li:hover{
+  box-shadow: 
+    0 1.85px 3.15px rgba(0,0,0,.048),
+    0 8.15px 6.52px rgba(0,0,0,.079),
+    0 20px 13px rgba(0,0,0,.01),
+    0 38.52px 25.48px rgba(0,0,0,.0121),
+    0 64.81px 46.85px rgba(0,0,0,.0152),
+    0 100px 80px rgba(0,0,0,0.02);
+}
+.services_list li:after{
+  content:'';
+  position:absolute;
+  height: 100px;
+  width: 100px;
+  background:#DF6951;
+  border-radius: 30px 0 10px 0;
+  bottom: 20px;
+  left: 20px;
+  z-index: -1;
+  transition: 0.3s;
+}
+.services_list li:hover:after{
+  transform: translate(-55px, 55px);
+}
+
+.services_list figure{
+  height: 154px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.services_list h3{
+  font-size: 20px;
+  font-family: "Open Sans", sans-serif;
+ line-height: 27px;
+ color: #1E1D4C;
+ margin-bottom: 15px;
+ font-weight: 600;
+ white-space: nowrap;
+}
+
+
+
 
