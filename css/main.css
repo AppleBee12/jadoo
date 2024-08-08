@@ -186,7 +186,7 @@ header .content .desc {
   width: 545px;
 }
 
-.desc h3 {
+header .content .desc h3 {
   font-size: 20px;
   font-weight: bold;
   line-height: 30px;
@@ -196,7 +196,7 @@ header .content .desc {
 
 }
 
-.desc h2 {
+header .content .desc h2 {
   color: #181E4B;
   font: 84px/89px Volkhov, sans-serif;
   font-weight: bold;
@@ -207,11 +207,11 @@ header .content .desc {
   position: relative;
 }
 
-.desc h2 em {
+header .content .desc h2 em {
   position: relative;
 }
 
-.desc em:after {
+header .content .desc em:after {
   content: '';
   width: 385px;
   height: 12px;
@@ -222,7 +222,7 @@ header .content .desc {
   z-index: -1;
 }
 
-.desc p {
+header .content .desc p {
   width: 477px;
   font-size: 16px;
   line-height: 30px;
@@ -362,7 +362,6 @@ header .content .desc {
   position: relative;
   overflow: hidden;
   box-shadow: 0px 100px 80px 0px rgba(0, 0, 0, 0.02), 0px 64.815px 46.852px 0px rgba(0, 0, 0, 0.02), 0px 38.519px 25.481px 0px rgba(0, 0, 0, 0.01), 0px 20px 13px 0px rgba(0, 0, 0, 0.01), 0px 8.148px 6.519px 0px rgba(0, 0, 0, 0.01), 0px 1.852px 3.148px 0px rgba(0, 0, 0, 0.00);
-  ;
 }
 
 .destinations_list li img {
@@ -403,6 +402,7 @@ header .content .desc {
 .book_a_trip {
   display: flex;
   justify-content: space-between;
+  background: url(../images/book_bg.svg) right top no-repeat;
 }
 
 .book_a_trip .sec_tt {
@@ -415,7 +415,9 @@ header .content .desc {
 }
 
 .book_a_trip .pic_of_month {
+  margin-top:80px;
   width: 485px;
+  position:relative;
 }
 
 .steps {
@@ -464,13 +466,18 @@ header .content .desc {
 .steps .desc p {
   line-height: 1.24;
 }
-
+.pic_of_month{
+  width:485px;
+  position:relative;
+  border-radius: 26px;
+}
 .pic_of_month .detail {
   padding: 20px 24px 30px;
   border-radius: 26px;
   background: #fff;
   width: 370px;
   box-sizing: border-box;
+  box-shadow: 0px 100px 80px 0px rgba(0, 0, 0, 0.02), 0px 64.815px 46.852px 0px rgba(0, 0, 0, 0.02), 0px 38.519px 25.481px 0px rgba(0, 0, 0, 0.01), 0px 20px 13px 0px rgba(0, 0, 0, 0.01), 0px 8.148px 6.519px 0px rgba(0, 0, 0, 0.01), 0px 1.852px 3.148px 0px rgba(0, 0, 0, 0.00);
 }
 
 .pic_of_month .detail img {
@@ -532,6 +539,10 @@ header .content .desc {
   background-color: var(--white);
   border-radius: 18px;
   padding:20px 25px 22px 18px;
+  position: absolute;
+  left:222px;
+  bottom: 52px;
+  box-shadow: 0px 100px 80px 0px rgba(0, 0, 0, 0.02), 0px 64.815px 46.852px 0px rgba(0, 0, 0, 0.02), 0px 38.519px 25.481px 0px rgba(0, 0, 0, 0.01), 0px 20px 13px 0px rgba(0, 0, 0, 0.01), 0px 8.148px 6.519px 0px rgba(0, 0, 0, 0.01), 0px 1.852px 3.148px 0px rgba(0, 0, 0, 0.00);
 }
 
 .ongoing h5 {
@@ -551,6 +562,8 @@ header .content .desc {
   font-size:14px;
   line-height: 1.24;
   letter-spacing: -0.055em;
+  color:#080809;
+  font-weight: 500;
 }
 
 .ongoing p .percent{
@@ -559,12 +572,20 @@ header .content .desc {
 }
 
 .ongoing .progress_bar{
+  position:relative;
+  margin-top:10px;
   width:156px;
   height: 5px;
   border-radius: 2.5px;
-  color: #f5f5f5;
+  background: #f5f5f5;
 
 }
 .ongoing .progress_bar .bar{
-  
+  position:absolute;
+ width: 73px;
+ height: 5px;
+ background: #8A79DF;
+ border-radius: 2.5px;
+ left:0;
+ top:0;
 }
