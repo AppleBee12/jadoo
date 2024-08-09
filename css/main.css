@@ -816,3 +816,75 @@ blockquote p:after {
   font-size: 30px;
   line-height: 70px;
 }
+
+/*FOOTER*/
+footer{
+  margin-top: 86px;
+  padding: 80px 0;
+  
+}
+footer > div{
+  display: flex;
+  gap: 82px
+}
+
+footer .container .company{
+  font-size: 13px;
+  line-height: 1.24;
+  color: #5E6282;
+  width: 207px;
+}
+footer .container .company h2{
+font-size: 44px;
+line-height: 66px;
+font-weight: 500;
+color:#181E4B;
+margin-bottom: 19px;
+}
+footer .container nav {
+  font-size: 21px;
+  line-height: 1.24;
+  color: #080809;
+  display: flex;
+  flex:1;
+  justify-content: center;
+  gap: 80px;
+}
+
+footer .container nav dl dt{
+ font-weight: 700;
+ margin-bottom: 34px;
+}
+footer .container nav dl dd{
+color: #5E6282;
+font-size: 18px;
+line-height: 1.24;
+font-weight: 500;
+}
+footer nav dd + dd{
+margin-top: 12px;
+}
+footer nav dd a{
+  color: var(--txt-color);
+
+}
+
+.outbound .sns{
+  display: flex;
+  gap: 25px;
+}
+
+.outbound .sns li {
+  width: 41px;
+  height: 41px;
+  border-radius: 50%;
+  background: var(--white);
+  box-shadow: 0 2px 10px rgba(0,0,0,.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.outbound .sns li a{
+  color: #080809;
+}
