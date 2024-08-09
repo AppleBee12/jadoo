@@ -589,3 +589,105 @@ header .content .desc p {
  left:0;
  top:0;
 }
+
+/*TESTIMONIALS*/
+.testimonials{
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.testimonials .header{
+  width: 408px;
+
+}
+.testimonials .header sec_tt{
+  margin-bottom: 82px;
+}
+.testimonials .pager{
+  display: flex;
+  gap:26px;
+}
+
+.testimonials .pager a{
+  width:12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #E5E5E5;
+  display: inline-block;
+  text-indent: -9999em;
+}
+.testimonials .pager a.active{
+  background: #39425D;
+}
+
+.testimonials_list{
+  margin-top: 25px;
+  width: 589px;
+  height: 356px;
+  position: relative;
+}
+.testimonials_list li{
+  position:absolute;
+  left:44px;
+  top:123px;
+  width:504px;
+  padding:28px 68px 34px 32px;
+  box-sizing: border-box;
+  border:2px solid #F7F7F7;
+  border-radius: 10px;
+  background: #F7F7F7;
+  box-shadow: 0px 100px 80px 0px rgba(0, 0, 0, 0.02), 0px 64.815px 46.852px 0px rgba(0, 0, 0, 0.02), 0px 38.519px 25.481px 0px rgba(0, 0, 0, 0.01), 0px 20px 13px 0px rgba(0, 0, 0, 0.01), 0px 8.148px 6.519px 0px rgba(0, 0, 0, 0.01), 0px 1.852px 3.148px 0px rgba(0, 0, 0, 0.00);
+  transition: 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+.testimonials_list li.active{
+  background: var(--white);
+  left:0;
+  top:0;
+  border:none;
+  z-index: 1;
+}
+.testimonials_list li blockquote{
+  line-height: 32px;
+  font-weight: 500;
+}
+.testimonials_list blockquote p:before, blockquote p:after{
+ content: '"';
+}
+
+.testimonials_list li img{
+  position: absolute;
+  left:-37px;
+  top: -34px;
+}
+.testimonials_list li small{
+  margin-top: 34px;
+  display: block;
+  font-size: 14px;
+  line-height: 21px;
+}
+.testimonials_list li small span{
+  font-style: 18px;
+  line-height: 27px;
+  font-weight: 600;
+  display: block;
+}
+
+.testimonials .pagination{
+  position:absolute;
+  width: 14px;
+  height: 7px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  top:50%;
+  left:calc(100% + 32px);
+  transform: translateY(-50%);
+  gap:58px;
+}
+.testimonials .pagination button{
+  color:#BCB7C2;
+  cursor: pointer;
+}
+.testimonials .pagination button:hover{
+  color:#3E2E4D;
+}
